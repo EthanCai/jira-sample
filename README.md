@@ -2,13 +2,40 @@
 
 这个项的目的是搭建一套jira的测试环境，验证 jira、openldap 的集成方案。
 
-# 安装OpenLDAP
+# 环境搭建步骤
+
+## 安装vagrant
 
 ```sh
+brew cask install vagrant
+
+# 参考https://github.com/sprotheroe/vagrant-disksize
+vagrant plugin install vagrant-disksize
+```
+
+## 安装VirtualBox
+
+参考 https://www.virtualbox.org/
+
+## 启动虚拟机
+
+进入当前项目的根目录，然后启动虚拟机：
+
+```sh
+vagrant up
+```
+
+## 安装OpenLDAP
+
+`vagrant ssh`登录虚拟机，然后执行下面的命令安装OpenLDAP：
+
+```sh
+sudo su -
+cd /vagrant
 pushd scripts
 
 ./disable-selinux.sh
-./install-ldap.sh
+./install-ldap.shg
 ./chroopw.sh    # 密码是111
 ./import-schemas.sh
 ./chdomain.sh
@@ -18,13 +45,13 @@ pushd scripts
 popd
 ```
 
-# 安装MySQL
+## 安装MySQL
 
 参考：
 - https://dev.mysql.com/doc/refman/5.7/en/linux-installation-yum-repo.html
 
 
-## 第一步
+### 第一步
 
 ```sh
 wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
@@ -68,7 +95,7 @@ pid-file=/var/run/mysqld/mysqld.pid
 重启mysql
 
 
-## 第二步
+### 第二步
 
 创建jira数据库，初始化jira用户
 
@@ -82,7 +109,7 @@ FLUSH PRIVILEGES;
 ```
 
 
-# 安装JIRA
+## 安装JIRA
 
 ```
 wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-7.12.3-x64.bin
@@ -98,7 +125,7 @@ cp /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/atlassian-extras-3.2.jar /opt/
 ```
 
 
-# 配置JIRA
+## 配置JIRA
 
 如何配置JIRA参考 https://www.jianshu.com/p/889a935316ba 这篇文章 “启动JIRA实例” 这一节：
 
