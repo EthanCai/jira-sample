@@ -129,26 +129,6 @@ cp /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/atlassian-extras-3.2.jar /opt/
 
 如何配置JIRA参考 https://www.jianshu.com/p/889a935316ba 这篇文章 “启动JIRA实例” 这一节：
 
-
-JRIA License
-
-Server: IDBM41-P0UK-V0LY-GQ64
-Your License Key:
-AAABeg0ODAoPeNp9kUFPwkAQhe/9FU286GGbFosiSRO13Ri0BaRoYuJlXIayBrbN7Bbl31taiKDAcdqd97735mxcop0A2d617Xa6Lb/rX9phNLZbbsu1MkJUs7wokJxYClQa+UQamauA98d8NBz1Um71y8UH0mD6opF0wDwrzJUBYfqwwECAFDNU2QpUdpstQM4dkS+sT0ng/FscliRmoDECg8GagLmXzOtYG+/xqsBaNBwkCR+Fvbt4+4t/F5JWO3s+8663IDypbI+RpEhLpF4U3Ce+x4buyxN7deM39vB85TeYBeWTUhhnPTCdT80XEDqVrlxiYKjE5tnxgg7UeChKRakMKlDiSJwTNP+q3PhUueJelPI+i7221253OjdWNQX7X04IpwbIIAVTmGu0BpSBkhrqhGhmoKyQsB7/3mzeALxWPOvHrb0WsApKBUm9KTBCLUgWtexj5W+nG3/7vLnPxXvX5kuYl7VXA3zsAoe63TXf3fvVbOYfwQUMyTAsAhQydvZ3rUmdSXjgRFda9CNWAxez+QIUSeCnCPJUaiC4KAYjJt96z6Ng0Yw=X02ie
-
-
-Admin Account
-
-Username: admin
-Password: P@ssw0rd!
-
-
-Other Account
-
-sunbenxin/P@ssw0rd!
-wanglei/P@ssw0rd!
-
-
 # 参考
 
 - Linux
